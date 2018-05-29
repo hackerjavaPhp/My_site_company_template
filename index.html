@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Flexbox на практике</title>
+		<meta charset="utf-8">
+		<!-- Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700" rel="stylesheet"> 
+
+		<!-- Styles -->
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/flex.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+
+		<!-- Auto prefix -->
+		<script src="js/prefixfree.min.js"></script>
+	</head>
+	<body>
+
+		<header id="header" class="main_flex flex__jcontent_center flex__align-content_space-between">
+			<div id="top_header" class="wrap main_flex__nowrap flex__align-items_center flex__jcontent_between">
+				<div id="phone">8 800 500 50 50</div>
+				<div id="logo"><img src="images/logo.png" alt="logo"></div>
+				<div id="call">Call to order</div>
+			</div>
+			<div id="bottom_header">
+				<nav class="wrap main_flex__nowrap flex__align-items_center flex__jcontent_between">
+					<li><a href="#header">Home</a></li>
+					<li><a href="#about">About Us</a></li>
+					<li><a href="#">Gallery</a></li>
+					<li><a href="#">Consulation</a></li>
+					<li><a href="#">Testionals</a></li>
+					<li><a href="#">Contacts</a></li>
+				</nav>
+			</div>
+		</header>
+
+		<section id="about">
+			<div class="wrap main_flex__nowrap flex__jcontent_between flex__align-items_start">
+				<div id="title_about">
+					<p>Miami best</p> 
+					<p>Realry—</p>
+					<p><span class="t_blue">this</span></p>
+				</div>
+				<div id="text_about">
+					<p><strong>Over 50 years experience in love.</strong></p>
+					<p>Mazel and VA Tsukkerman in his "Analysis of musical works." Pointillism, which originated in the music of the early twentieth century, microforms, found a distant historical.</p>
+					<ul>
+						<li>1.The market leader in real estate since 2003</li>
+						<li>2.Awards Real Estate Company, 2010, 2011, 2013</li>
+						<li>3.More than 200 satisfied customers premium segment</li>
+						<li>4.We focus only on new buildings and high-level
+     doskanalno know this area better than other specialists</li>
+						<li>5.Working directly with developers - so have more
+     useful information about the profitable deals</li>
+					</ul>
+					<p><strong>We will never late!</strong></p>
+					<p><strong>Guaranteed secure transaction - 100%</strong></p>
+				</div>
+			</div>
+		</section>
+
+		<section id="gallery">
+			<div class="title">
+				<h2>Gallery</h2>
+				<div class="dec main_flex__nowrap flex__align-content_center flex__align-items_center
+				flex__jcontent_between">
+					<div class="line"></div>
+					<div class="dec_svg">
+						<img src="images/krone.png" alt="krone">
+					</div>
+					<div class="line"></div>
+				</div>
+			</div>
+
+			<div class="wrap">
+				<div class="gallery_line main_flex__nowrap flex__jcontent_between">
+					<div class="box_img_gallery">
+						<img src="images/bg_home_1.jpg" alt="bg_home_1">
+					</div>
+					<div class="box_img_gallery">
+						<img src="images/bg_home_2.jpg" alt="bg_home_2">
+					</div>
+				</div>
+				<div class="name_gallery">
+					Marina Palms / <span class="t_blue">North Miami Beach, FL 33162</span>
+				</div>
+
+				<div class="gallery_line main_flex__nowrap flex__jcontent_between">
+					<div class="box_img_gallery">
+						<img src="images/bg_home_3.jpg" alt="bg_home_3">
+					</div>
+					<div class="box_img_gallery">
+						<img src="images/bg_home_4.jpg" alt="bg_home_4">
+					</div>
+				</div>
+				<div class="name_gallery">
+					Marina Palms / <span class="t_blue">North Miami Beach, FL 33162</span>
+				</div>
+
+				<div class="gallery_line main_flex__nowrap flex__jcontent_between">
+					<div class="box_img_gallery">
+						<img src="images/bg_home_5.jpg" alt="bg_home_5">
+					</div>
+					<div class="box_img_gallery">
+						<img src="images/bg_home_6.jpg" alt="bg_home_6">
+					</div>
+				</div>
+				<div class="name_gallery">
+					Marina Palms / <span class="t_blue">North Miami Beach, FL 33162</span>
+				</div>
+
+				<div class="main_flex__nowrap flex__jcontent_center">
+					<button class="btn blue_btn" id="view_all_gallery" type="button">View all</button>
+				</div>
+			</div>
+		</section>
+
+		<section id="consultation">
+			<div class="title">
+				<h2>Consulation</h2>
+				<div class="dec main_flex__nowrap flex__align-content_center flex__align-items_center
+				flex__jcontent_between">
+					<div class="line"></div>
+					<div class="dec_svg">
+						<img src="images/krone.png" alt="krone">
+					</div>
+					<div class="line"></div>
+				</div>
+			</div>
+
+			<div class="wrap main_flex__nowrap flex__jcontent_between flex__align-items_start">
+				<div id="text_consultation">
+					<h2>How long have<br>
+						you do yourself a gift?</h2>
+					<p>The procedural change mezzo forte starts izoritmichesky pickup at these moments stop LA Mazel and VA Tsukkerman in his "Analysis of musical works." Pointillism, which originated in the music of the early twentieth century, microforms, found a distant historical</p>
+				</div>
+				<div id="form_con">
+					<form id="form_consultation" action="" method="get">
+						<input type="text" name="name" placeholder="name">
+						<input type="text" name="name" placeholder="phone">
+						<input type="text" name="name" placeholder="email">
+						<button class="btn blue_btn" type="submit">Consultation</button>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<section id="testionals">
+			<div class="title">
+				<h2>Testionals</h2>
+				<div class="dec main_flex__nowrap flex__align-content_center flex__align-items_center
+				flex__jcontent_between">
+					<div class="line"></div>
+					<div class="dec_svg">
+						<img src="images/krone.png" alt="krone">
+					</div>
+					<div class="line"></div>
+				</div>
+			</div>
+
+
+
+			<div class="wrap main_flex__nowrap flex__jcontent_between">
+				
+				<div class="box_tm">
+
+					<div class="img_tm">
+
+						<div class="box_img_tm main_flex__nowrap flex__align-content_center">
+							<img src="images/big_people_2.png">
+						</div>
+
+					</div>
+					<div class="name_tm">
+						<h3>Stev Joni</h3>
+						<h4>Founder Lucoil</h4>
+					</div>
+					<div class="text_tm">
+						<p>Nice work, Certificates National Association of Realtors (USA).</p>
+					</div>
+
+				</div>
+
+				<div class="box_tm">
+
+					<div class="img_tm">
+
+						<div class="box_img_tm main_flex__nowrap flex__align-content_center">
+							<img src="images/big_people_1.png">
+						</div>
+
+					</div>
+					<div class="name_tm">
+						<h3>Alisher Usmanov</h3>
+						<h4>Ural Steel</h4>
+					</div>
+					<div class="text_tm">
+						<p>My soul is illuminated by an unearthly joy, as these beautiful spring morning, which I enjoy with all my heart. 
+						I'm all alone and blissfully happy in the local edge. 
+						as if created for the likes of me.</p>
+					</div>
+
+				</div>
+
+				<div class="box_tm">
+
+					<div class="img_tm">
+
+						<div class="box_img_tm main_flex__nowrap flex__align-content_center">
+							<img src="images/big_people_3.png">
+						</div>
+
+					</div>
+					<div class="name_tm">
+						<h3>Алексей Мордашов</h3>
+						<h4>ГазПром</h4>
+					</div>
+					<div class="text_tm">
+						<p>When my lovely valley of steam rises and half-day sun is above an impermeable. thicket</p>
+					</div>
+
+				</div>
+
+			</div>
+
+
+
+		</section>
+
+		<section id="contacts">
+			<div class="title">
+				<h2>Contacts</h2>
+				<div class="dec main_flex__nowrap flex__align-content_center flex__align-items_center
+				flex__jcontent_between">
+					<div class="line"></div>
+					<div class="dec_svg">
+						<img src="images/krone.png" alt="krone">
+					</div>
+					<div class="line"></div>
+				</div>
+			</div>
+
+			<div class="wrap main_flex__nowrap flex__jcontent_between">
+				<ul id="contact_list">
+					<li>Hello@miami.com</li>
+					<li>8 800 678 78 78<br>
+					8 800 700 98 98</li>
+					<li>400 first ave. n.<br>
+					suite 700<br>
+					Minneapolis, MN 55401</li>
+				</ul>
+
+				<div id="form_contact">
+					<form id="form_cont" action="" method="get">
+						<input type="text" name="name" placeholder="name">
+						<input type="text" name="name" placeholder="email">
+						<textarea placeholder="message"></textarea>
+						<button class="btn blue_btn" type="submit">write to us</button>
+					</form>
+				</div>
+
+			</div>
+		</section>
+
+		<footer class="main_flex flex__align-content_center flex__align-items_center flex__jcontent_center">
+			<div id="logo_footer">
+				<img src="images/logo.png" alt="logo">
+			</div>
+
+			<div id="coper">
+				© 2018 Miami.
+			</div>
+		</footer>
+
+		<!-- Scripts -->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
