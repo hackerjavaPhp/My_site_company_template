@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="ru">
 	<head>
-		<title>Flexbox на практике</title>
+		<title>Web</title>
 		<meta charset="utf-8">
 		<!-- Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700" rel="stylesheet"> 
-
-		<!-- Styles -->
+		<!-- reset -->
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
+        <!-- Slick -->
+		<link rel="stylesheet" type="text/css" href="libs/slick-master/slick/slick.css">
+		<link rel="stylesheet" type="text/css" href="libs/slick-master/slick/slick-theme.css">
+        <!-- Styles -->
 		<link rel="stylesheet" type="text/css" href="css/flex.css">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
-
 		<!-- Auto prefix -->
 		<script src="js/prefixfree.min.js"></script>
 	</head>
@@ -26,10 +28,10 @@
 				<nav class="wrap main_flex__nowrap flex__align-items_center flex__jcontent_between">
 					<li><a href="#header">Home</a></li>
 					<li><a href="#about">About Us</a></li>
-					<li><a href="#">Gallery</a></li>
-					<li><a href="#">Consulation</a></li>
-					<li><a href="#">Testionals</a></li>
-					<li><a href="#">Contacts</a></li>
+					<li><a href="#gallery">Gallery</a></li>
+					<li><a href="#consultation">Consulation</a></li>
+					<li><a href="#testionals">Testionals</a></li>
+					<li><a href="#contacts">Contacts</a></li>
 				</nav>
 			</div>
 		</header>
@@ -72,7 +74,8 @@
 				</div>
 			</div>
 
-			<div class="wrap">
+			<div class="wrap" id="gallery_box">
+                
 				<div class="gallery_line main_flex__nowrap flex__jcontent_between">
 					<div class="box_img_gallery">
 						<img src="images/bg_home_1.jpg" alt="bg_home_1">
@@ -160,7 +163,7 @@
 
 
 
-			<div class="wrap main_flex__nowrap flex__jcontent_between">
+			<div id="slide" class="wrap main_flex__nowrap flex__jcontent_between">
 				
 				<div class="box_tm">
 
@@ -220,7 +223,64 @@
 					</div>
 
 				</div>
+                
+                <div class="box_tm">
 
+					<div class="img_tm">
+
+						<div class="box_img_tm main_flex__nowrap flex__align-content_center">
+							<img src="images/big_people_3.png">
+						</div>
+
+					</div>
+					<div class="name_tm">
+						<h3>Алексей Мордашов</h3>
+						<h4>ГазПром</h4>
+					</div>
+					<div class="text_tm">
+						<p>When my lovely valley of steam rises and half-day sun is above an impermeable. thicket</p>
+					</div>
+
+				</div>
+                
+                <div class="box_tm">
+
+					<div class="img_tm">
+
+						<div class="box_img_tm main_flex__nowrap flex__align-content_center">
+							<img src="images/big_people_3.png">
+						</div>
+
+					</div>
+					<div class="name_tm">
+						<h3>Алексей Мордашов</h3>
+						<h4>ГазПром</h4>
+					</div>
+					<div class="text_tm">
+						<p>When my lovely valley of steam rises and half-day sun is above an impermeable. thicket</p>
+					</div>
+
+				</div>
+                
+                <div class="box_tm">
+
+					<div class="img_tm">
+
+						<div class="box_img_tm main_flex__nowrap flex__align-content_center">
+							<img src="images/big_people_3.png">
+						</div>
+
+					</div>
+					<div class="name_tm">
+						<h3>Алексей Мордашов</h3>
+						<h4>ГазПром</h4>
+					</div>
+					<div class="text_tm">
+						<p>When my lovely valley of steam rises and half-day sun is above an impermeable. thicket</p>
+					</div>
+
+				</div>
+                
 			</div>
 
 
@@ -273,7 +333,9 @@
 		</footer>
 
 		<!-- Scripts -->
-		<script type="text/javascript" src="js/jquery.min.js"></script>
-		<script type="text/javascript" src="js/main.js"></script>
+		<script src="libs/slick-master/slick/slick.min.js"></script>
+		<script src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="libs/slick-master/slick/slick.min.js"></script>
+		<script src="js/main.js"></script>
 	</body>
 </html>
