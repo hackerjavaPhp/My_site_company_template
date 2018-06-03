@@ -44,9 +44,6 @@ body {
   height: 10vh;
   padding-top: 7vh;
 }
-#logo {
-  width: 16vh;
-}
 #call {
   text-transform: uppercase;
   text-decoration: underline;
