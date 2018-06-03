@@ -23,6 +23,22 @@ body {
   background-image: url("../images/bg_city_1.jpg");
   color: #fff;
   background-attachment: fixed;
+  animation: slideshow 9s linear infinite 0s;
+  backface-visibility: hidden;
+}
+@keyframes slideshow {
+  0% {
+    background-image: url(../images/bg_city_1.jpg);
+    animation-timing-function: ease-in-out;
+  }
+  50% {
+    background-image: url(../images/bg_city_2.jpg);
+    animation-timing-function: ease-in-out;
+  }
+  100% {
+    background-image: url(../images/bg_city_1.jpg);
+    animation-timing-function: ease-in-out;
+  }
 }
 #top_header {
   height: 10vh;
@@ -123,6 +139,13 @@ nav a {
   margin-bottom: 2vw;
   margin-top: 1vw;
 }
+.gallery_line {
+  filter: blur(3px);
+  transition: .4s;
+}
+.gallery_line:hover {
+  filter: blur(0.5px);
+}
 .gallery_line:nth-of-type(1) .box_img_gallery:nth-of-type(1) {
   width: 49vw;
   margin-right: 1.58vw;
@@ -179,13 +202,16 @@ nav a {
   margin-top: 6.50vh;
 }
 #form_consultation,
-#form_cont {
+#form_cont,
+#form_call {
   width: 30vw;
 }
 #form_consultation input,
 #form_cont input,
+#form_call input,
 #form_consultation textarea,
-#form_cont textarea {
+#form_cont textarea,
+#form_call textarea {
   background-color: #eee;
   border: none;
   text-align: center;
@@ -197,13 +223,15 @@ nav a {
   margin-bottom: 1.3vh;
 }
 #form_consultation textarea,
-#form_cont textarea {
+#form_cont textarea,
+#form_call textarea {
   resize: none;
   height: 21.7vh;
   padding-top: 2vh;
 }
 #form_consultation button,
-#form_cont button {
+#form_cont button,
+#form_call button {
   width: 100%;
   text-align: center;
   text-transform: uppercase;
@@ -300,4 +328,35 @@ footer {
 }
 #bottom_header.fixedNav a:hover {
   text-decoration: underline;
+}
+#black_fill {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+#modal_box {
+  position: fixed;
+  top: 20vh;
+  width: 50vw;
+  left: calc(25%);
+  z-index: 51;
+}
+#content_modal {
+  background-color: #fff;
+  padding: 5%;
+}
+#close_modal {
+  width: 3vw;
+  height: 3vw;
+  fill: #fff;
+  position: absolute;
+  top: -3.5vw;
+  cursor: pointer;
+}
+#form_call {
+  width: auto;
 }

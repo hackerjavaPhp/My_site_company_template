@@ -42,12 +42,26 @@ $(function(){
         
     }
     
+    
     $('#view_all_gallery').click(function() {
         let content = "<div class=\"gallery_line main_flex__nowrap flex__jcontent_between\"><div class=\"box_img_gallery\"><img src=\"images/bg_home_1.jpg\" alt=\"bg_home_1\"></div><div class=\"box_img_gallery\"><img src=\"images/bg_home_2.jpg\" alt=\"bg_home_2\"></div></div><div class=\"name_gallery\">Marina Palms / <span class=\"t_blue\">North Miami Beach, FL33162</span></div>";
         
         $("#gallery_box").append(content);
         $(this).remove();
     });
+    
+    $('#modal_box, #black_fill').hide();
+    
+    $('#call').click(function() {
+        $('#modal_box, #black_fill').fadeIn();
+    });
+    
+    $('#close_modal, #black_fill').click(function() {
+        $('#modal_box, #black_fill').fadeOut();
+    });
+    
+    
+    
     
     
 })
